@@ -35,4 +35,12 @@ build/
 
 # Logs
 logs/
-*.log 
+*.log
+
+# Large data files
+full_markets_data.json
+sports_data.json
+sports_data_basketball.json
+leagueID.json.bak
+leagueID.json.new
+leagueID.fixed.json 
