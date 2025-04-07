@@ -1,0 +1,23 @@
+{
+  "name": "betcli",
+  "version": "1.0.0",
+  "description": "A command-line interface for querying sports betting markets using the Overtime Markets API",
+  "main": "script.js",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "keywords": [
+    "sports",
+    "betting",
+    "cli",
+    "overtime",
+    "markets",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "openai": "^4.28.0"
+  }
+} 

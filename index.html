@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetCLI - Overtime Markets Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Add required libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Load sports mapping first (creates OvertimeSports namespace) -->
+    <script src="sports_mapping.js"></script>
+    
+    <!-- Set up system prompt loading -->
+    <script>
+        // Preload the system prompt
+        fetch('system_prompt.txt')
+            .then(response => response.text())
+            .then(text => {
+                window.SYSTEM_PROMPT = text;
+                console.log('System prompt loaded, length:', text.length);
+            })
+            .catch(error => {
+                console.error('Error loading system prompt:', error);
+            });
+    </script>
+    
+    <!-- Load main scripts -->
+    <script src="script.js"></script>
+    <script src="api_handler_browser.js?v=1"></script>
+    
+    <!-- Add this debugging script for better clarity -->
+    <script>
+      // Debug any response_format issues
+      console.log('Checking for OpenAI API helper scripts...');
+      if (window.openai || window.OpenAI) {
+        console.warn('Found potential OpenAI SDK that might be adding response_format');
+      }
+    </script>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="terminal-title">BetCLI - Overtime Markets Terminal</div>
+            <div class="terminal-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+            </div>
+        </div>
+        <div class="terminal-content" id="terminalContent">
+            <div class="message system">
+                <span class="welcome-logo">🎲 BetCLI 🎲</span>
+            </div>
+            <div class="message system">
+                Welcome to BetCLI! Ask me anything about Overtime Markets.
+            </div>
+            <div class="message system">
+                Examples: 
+                <ul>
+                    <li>"Show NBA money lines for today"</li>
+                    <li>"What are the handicap markets for NFL games?"</li>
+                    <li>"Show player props for LeBron James"</li>
+                </ul>
+            </div>
+        </div>
+        <div class="input-container">
+            <span class="prompt">$</span>
+            <input type="text" id="terminalInput" class="terminal-input" placeholder="Type your query here..." autofocus>
+        </div>
+    </div>
+</body>
+</html> 
