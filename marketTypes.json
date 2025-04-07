@@ -1,0 +1,1617 @@
+{
+    "0": {
+      "id": 0,
+      "key": "winner",
+      "name": "Winner",
+      "resultType": 1
+    },
+    "10001": {
+      "id": 10001,
+      "key": "spread",
+      "name": "Handicap",
+      "resultType": 4
+    },
+    "10002": {
+      "id": 10002,
+      "key": "total",
+      "name": "Total",
+      "resultType": 2
+    },
+    "10003": {
+      "id": 10003,
+      "key": "doubleChance",
+      "name": "Double chance",
+      "resultType": 1
+    },
+    "10004": {
+      "id": 10004,
+      "key": "winnerTotal",
+      "name": "Winner + Total",
+      "resultType": 3
+    },
+    "10005": {
+      "id": 10005,
+      "key": "totalOddEven",
+      "name": "Total odd/even",
+      "resultType": 1
+    },
+    "10006": {
+      "id": 10006,
+      "key": "halftimeFulltime",
+      "name": "Half-time/Full-time",
+      "resultType": 3
+    },
+    "10007": {
+      "id": 10007,
+      "key": "goals",
+      "name": "Goals",
+      "resultType": 3
+    },
+    "10008": {
+      "id": 10008,
+      "key": "halftimeFulltimeGoals",
+      "name": "Half-time/Full-time + Goals",
+      "resultType": 3
+    },
+    "10009": {
+      "id": 10009,
+      "key": "bothTeamsToScore",
+      "name": "Both teams to score",
+      "resultType": 1
+    },
+    "10010": {
+      "id": 10010,
+      "key": "drawNoBet",
+      "name": "Draw no bet",
+      "resultType": 4
+    },
+    "10011": {
+      "id": 10011,
+      "key": "winner2",
+      "name": "Winner 3-way (60 min)",
+      "resultType": 1
+    },
+    "10012": {
+      "id": 10012,
+      "key": "winner3",
+      "name": "Winner",
+      "resultType": 1
+    },
+    "10013": {
+      "id": 10013,
+      "key": "spread2",
+      "name": "Handicap",
+      "resultType": 4
+    },
+    "10014": {
+      "id": 10014,
+      "key": "total2",
+      "name": "Total",
+      "resultType": 2
+    },
+    "10015": {
+      "id": 10015,
+      "key": "firstPeriodDoubleChance",
+      "name": "Double chance 1st",
+      "resultType": 1
+    },
+    "10016": {
+      "id": 10016,
+      "key": "secondPeriodDoubleChance",
+      "name": "Double chance 2nd",
+      "resultType": 1
+    },
+    "10017": {
+      "id": 10017,
+      "key": "totalHomeTeam",
+      "name": "Total",
+      "resultType": 2
+    },
+    "10018": {
+      "id": 10018,
+      "key": "totalAwayTeam",
+      "name": "Total",
+      "resultType": 2
+    },
+    "10019": {
+      "id": 10019,
+      "key": "firstScore",
+      "name": "First",
+      "resultType": 1
+    },
+    "10020": {
+      "id": 10020,
+      "key": "lastScore",
+      "name": "Last",
+      "resultType": 1
+    },
+    "10021": {
+      "id": 10021,
+      "key": "firstPeriodWinner",
+      "name": "Winner 1st",
+      "resultType": 1
+    },
+    "10022": {
+      "id": 10022,
+      "key": "secondPeriodWinner",
+      "name": "Winner 2nd",
+      "resultType": 1
+    },
+    "10023": {
+      "id": 10023,
+      "key": "thirdPeriodWinner",
+      "name": "Winner 3rd",
+      "resultType": 1
+    },
+    "10024": {
+      "id": 10024,
+      "key": "fourthPeriodWinner",
+      "name": "Winner 4th",
+      "resultType": 1
+    },
+    "10025": {
+      "id": 10025,
+      "key": "fifthPeriodWinner",
+      "name": "Winner 5th",
+      "resultType": 1
+    },
+    "10026": {
+      "id": 10026,
+      "key": "sixthPeriodWinner",
+      "name": "Winner 6th",
+      "resultType": 1
+    },
+    "10027": {
+      "id": 10027,
+      "key": "seventhPeriodWinner",
+      "name": "Winner 7th",
+      "resultType": 1
+    },
+    "10028": {
+      "id": 10028,
+      "key": "eightPeriodWinner",
+      "name": "Winner 8th",
+      "resultType": 1
+    },
+    "10029": {
+      "id": 10029,
+      "key": "ninthPeriodWinner",
+      "name": "Winner 9th",
+      "resultType": 1
+    },
+    "10031": {
+      "id": 10031,
+      "key": "firstPeriodTotal",
+      "name": "Total 1st",
+      "resultType": 2
+    },
+    "10032": {
+      "id": 10032,
+      "key": "secondPeriodTotal",
+      "name": "Total 2nd",
+      "resultType": 2
+    },
+    "10033": {
+      "id": 10033,
+      "key": "thirdPeriodTotal",
+      "name": "Total 3rd",
+      "resultType": 2
+    },
+    "10034": {
+      "id": 10034,
+      "key": "fourthPeriodTotal",
+      "name": "Total 4th",
+      "resultType": 2
+    },
+    "10035": {
+      "id": 10035,
+      "key": "fifthPeriodTotal",
+      "name": "Total 5th",
+      "resultType": 2
+    },
+    "10036": {
+      "id": 10036,
+      "key": "sixthPeriodTotal",
+      "name": "Total 6th",
+      "resultType": 2
+    },
+    "10037": {
+      "id": 10037,
+      "key": "seventhPeriodTotal",
+      "name": "Total 7th",
+      "resultType": 2
+    },
+    "10038": {
+      "id": 10038,
+      "key": "eightPeriodTotal",
+      "name": "Total 8th",
+      "resultType": 2
+    },
+    "10039": {
+      "id": 10039,
+      "key": "ninthPeriodTotal",
+      "name": "Total 9th",
+      "resultType": 2
+    },
+    "10041": {
+      "id": 10041,
+      "key": "firstPeriodSpread",
+      "name": "Handicap 1st",
+      "resultType": 4
+    },
+    "10042": {
+      "id": 10042,
+      "key": "secondPeriodSpread",
+      "name": "Handicap 2nd",
+      "resultType": 4
+    },
+    "10043": {
+      "id": 10043,
+      "key": "thirdPeriodSpread",
+      "name": "Handicap 3rd",
+      "resultType": 4
+    },
+    "10044": {
+      "id": 10044,
+      "key": "fourthPeriodSpread",
+      "name": "Handicap 4th",
+      "resultType": 4
+    },
+    "10045": {
+      "id": 10045,
+      "key": "fifthPeriodSpread",
+      "name": "Handicap 5th",
+      "resultType": 4
+    },
+    "10046": {
+      "id": 10046,
+      "key": "sixthPeriodSpread",
+      "name": "Handicap 6th",
+      "resultType": 4
+    },
+    "10047": {
+      "id": 10047,
+      "key": "seventhPeriodSpread",
+      "name": "Handicap 7th",
+      "resultType": 4
+    },
+    "10048": {
+      "id": 10048,
+      "key": "eightPeriodSpread",
+      "name": "Handicap 8th",
+      "resultType": 4
+    },
+    "10049": {
+      "id": 10049,
+      "key": "ninthPeriodSpread",
+      "name": "Handicap 9th",
+      "resultType": 4
+    },
+    "10051": {
+      "id": 10051,
+      "key": "firstPeriodWinner2",
+      "name": "Winner 1st",
+      "resultType": 1
+    },
+    "10052": {
+      "id": 10052,
+      "key": "secondPeriodWinner2",
+      "name": "Winner 2nd",
+      "resultType": 1
+    },
+    "10053": {
+      "id": 10053,
+      "key": "thirdPeriodWinner2",
+      "name": "Winner 3rd",
+      "resultType": 1
+    },
+    "10054": {
+      "id": 10054,
+      "key": "fourthPeriodWinner2",
+      "name": "Winner 4th",
+      "resultType": 1
+    },
+    "10055": {
+      "id": 10055,
+      "key": "fifthPeriodWinner2",
+      "name": "Winner 5th",
+      "resultType": 1
+    },
+    "10056": {
+      "id": 10056,
+      "key": "sixthPeriodWinner2",
+      "name": "Winner 6th",
+      "resultType": 1
+    },
+    "10057": {
+      "id": 10057,
+      "key": "seventhPeriodWinner2",
+      "name": "Winner 7th",
+      "resultType": 1
+    },
+    "10058": {
+      "id": 10058,
+      "key": "eightPeriodWinner2",
+      "name": "Winner 8th",
+      "resultType": 1
+    },
+    "10059": {
+      "id": 10059,
+      "key": "ninthPeriodWinner2",
+      "name": "Winner 9th",
+      "resultType": 1
+    },
+    "10061": {
+      "id": 10061,
+      "key": "firstPeriodTotal2",
+      "name": "Total 1st",
+      "resultType": 2
+    },
+    "10062": {
+      "id": 10062,
+      "key": "secondPeriodTotal",
+      "name": "Total 2nd",
+      "resultType": 2
+    },
+    "10063": {
+      "id": 10063,
+      "key": "thirdPeriodTotal2",
+      "name": "Total 3rd",
+      "resultType": 2
+    },
+    "10064": {
+      "id": 10064,
+      "key": "fourthPeriodTotal2",
+      "name": "Total 4th",
+      "resultType": 2
+    },
+    "10065": {
+      "id": 10065,
+      "key": "fifthPeriodTotal2",
+      "name": "Total 5th",
+      "resultType": 2
+    },
+    "10066": {
+      "id": 10066,
+      "key": "sixthPeriodTotal2",
+      "name": "Total 6th",
+      "resultType": 2
+    },
+    "10067": {
+      "id": 10067,
+      "key": "seventhPeriodTotal2",
+      "name": "Total 7th",
+      "resultType": 2
+    },
+    "10068": {
+      "id": 10068,
+      "key": "eightPeriodTotal2",
+      "name": "Total 8th",
+      "resultType": 2
+    },
+    "10069": {
+      "id": 10069,
+      "key": "ninthPeriodTotal2",
+      "name": "Total 9th",
+      "resultType": 2
+    },
+    "10071": {
+      "id": 10071,
+      "key": "firstPeriodSpread2",
+      "name": "Handicap 1st",
+      "resultType": 4
+    },
+    "10072": {
+      "id": 10072,
+      "key": "secondPeriodSpread2",
+      "name": "Handicap 2nd",
+      "resultType": 4
+    },
+    "10073": {
+      "id": 10073,
+      "key": "thirdPeriodSpread2",
+      "name": "Handicap 3rd",
+      "resultType": 4
+    },
+    "10074": {
+      "id": 10074,
+      "key": "fourthPeriodSpread2",
+      "name": "Handicap 4th",
+      "resultType": 4
+    },
+    "10075": {
+      "id": 10075,
+      "key": "fifthPeriodSpread2",
+      "name": "Handicap 5th",
+      "resultType": 4
+    },
+    "10076": {
+      "id": 10076,
+      "key": "sixthPeriodSpread2",
+      "name": "Handicap 6th",
+      "resultType": 4
+    },
+    "10077": {
+      "id": 10077,
+      "key": "seventhPeriodSpread2",
+      "name": "Handicap 7th",
+      "resultType": 4
+    },
+    "10078": {
+      "id": 10078,
+      "key": "eightPeriodSpread2",
+      "name": "Handicap 8th",
+      "resultType": 4
+    },
+    "10079": {
+      "id": 10079,
+      "key": "ninthPeriodSpread2",
+      "name": "Handicap 9th",
+      "resultType": 4
+    },
+    "10081": {
+      "id": 10081,
+      "key": "firstPeriodTotalOddEven",
+      "name": "Total odd/even 1st",
+      "resultType": 1
+    },
+    "10082": {
+      "id": 10082,
+      "key": "secondPeriodTotalOddEven",
+      "name": "Total odd/even 2nd",
+      "resultType": 1
+    },
+    "10083": {
+      "id": 10083,
+      "key": "thirdPeriodTotalOddEven",
+      "name": "Total odd/even 3rd",
+      "resultType": 1
+    },
+    "10084": {
+      "id": 10084,
+      "key": "fourthPeriodTotalOddEven",
+      "name": "Total odd/even 4th",
+      "resultType": 1
+    },
+    "10085": {
+      "id": 10085,
+      "key": "fifthPeriodTotalOddEven",
+      "name": "Total odd/even 5th",
+      "resultType": 1
+    },
+    "10086": {
+      "id": 10086,
+      "key": "sixthPeriodTotalOddEven",
+      "name": "Total odd/even 6th",
+      "resultType": 1
+    },
+    "10087": {
+      "id": 10087,
+      "key": "seventhPeriodTotalOddEven",
+      "name": "Total odd/even 7th",
+      "resultType": 1
+    },
+    "10088": {
+      "id": 10088,
+      "key": "eightPeriodTotalOddEven",
+      "name": "Total odd/even 8th",
+      "resultType": 1
+    },
+    "10089": {
+      "id": 10089,
+      "key": "ninthPeriodTotalOddEven",
+      "name": "Total odd/even 9th",
+      "resultType": 1
+    },
+    "10091": {
+      "id": 10091,
+      "key": "firstPeriodTotal2OddEven",
+      "name": "Total odd/even 1st",
+      "resultType": 1
+    },
+    "10092": {
+      "id": 10092,
+      "key": "secondPeriodTotal2OddEven",
+      "name": "Total odd/even 2nd",
+      "resultType": 1
+    },
+    "10093": {
+      "id": 10093,
+      "key": "thirdPeriodTotal2OddEven",
+      "name": "Total odd/even 3rd",
+      "resultType": 1
+    },
+    "10094": {
+      "id": 10094,
+      "key": "fourthPeriodTotal2OddEven",
+      "name": "Total odd/even 4th",
+      "resultType": 1
+    },
+    "10095": {
+      "id": 10095,
+      "key": "fifthPeriodTotal2OddEven",
+      "name": "Total odd/even 5th",
+      "resultType": 1
+    },
+    "10096": {
+      "id": 10096,
+      "key": "sixthPeriodTotal2OddEven",
+      "name": "Total odd/even 6th",
+      "resultType": 1
+    },
+    "10097": {
+      "id": 10097,
+      "key": "seventhPeriodTotal2OddEven",
+      "name": "Total odd/even 7th",
+      "resultType": 1
+    },
+    "10098": {
+      "id": 10098,
+      "key": "eightPeriodTotal2OddEven",
+      "name": "Total odd/even 8th",
+      "resultType": 1
+    },
+    "10099": {
+      "id": 10099,
+      "key": "ninthPeriodTotal2OddEven",
+      "name": "Total odd/even 9th",
+      "resultType": 1
+    },
+    "10100": {
+      "id": 10100,
+      "key": "correctScore",
+      "name": "Correct score",
+      "resultType": 1
+    },
+    "10101": {
+      "id": 10101,
+      "key": "firstPeriodBothTeamsToScore",
+      "name": "Both teams to score 1st",
+      "resultType": 1
+    },
+    "10102": {
+      "id": 10102,
+      "key": "secondPeriodBothTeamsToScore",
+      "name": "Both teams to score 2nd",
+      "resultType": 1
+    },
+    "10103": {
+      "id": 10103,
+      "key": "thirdPeriodBothTeamsToScore",
+      "name": "Both teams to score 3rd",
+      "resultType": 1
+    },
+    "10104": {
+      "id": 10104,
+      "key": "fourthPeriodBothTeamsToScore",
+      "name": "Both teams to score 4th",
+      "resultType": 1
+    },
+    "10105": {
+      "id": 10105,
+      "key": "fifthPeriodBothTeamsToScore",
+      "name": "Both teams to score 5th",
+      "resultType": 1
+    },
+    "10106": {
+      "id": 10106,
+      "key": "sixthPeriodBothTeamsToScore",
+      "name": "Both teams to score 6th",
+      "resultType": 1
+    },
+    "10107": {
+      "id": 10107,
+      "key": "seventhPeriodBothTeamsToScore",
+      "name": "Both teams to score 7th",
+      "resultType": 1
+    },
+    "10108": {
+      "id": 10108,
+      "key": "eightPeriodBothTeamsToScore",
+      "name": "Both teams to score 8th",
+      "resultType": 1
+    },
+    "10109": {
+      "id": 10109,
+      "key": "ninthPeriodBothTeamsToScore",
+      "name": "Both teams to score 9th",
+      "resultType": 1
+    },
+    "10111": {
+      "id": 10111,
+      "key": "firstPeriodTotalHomeTeam",
+      "name": "Total 1st",
+      "resultType": 2
+    },
+    "10112": {
+      "id": 10112,
+      "key": "firstPeriodTotalAwayTeam",
+      "name": "Total 1st",
+      "resultType": 2
+    },
+    "10118": {
+      "id": 10118,
+      "key": "firstPeriodTotal2HomeTeam",
+      "name": "Total 1st",
+      "resultType": 2
+    },
+    "10119": {
+      "id": 10119,
+      "key": "firstPeriodTotal2AwayTeam",
+      "name": "Total 1st",
+      "resultType": 2
+    },
+    "10121": {
+      "id": 10121,
+      "key": "firstPeriodDrawNoBet",
+      "name": "Draw no bet 1st",
+      "resultType": 4
+    },
+    "10122": {
+      "id": 10122,
+      "key": "secondPeriodDrawNoBet",
+      "name": "Draw no bet 2nd",
+      "resultType": 4
+    },
+    "10123": {
+      "id": 10123,
+      "key": "thirdPeriodDrawNoBet",
+      "name": "Draw no bet 3rd",
+      "resultType": 4
+    },
+    "10124": {
+      "id": 10124,
+      "key": "fourthPeriodDrawNoBet",
+      "name": "Draw no bet 4th",
+      "resultType": 4
+    },
+    "10130": {
+      "id": 10130,
+      "key": "whoWillQualify",
+      "name": "Who will qualify for the next round",
+      "resultType": 1
+    },
+    "10131": {
+      "id": 10131,
+      "key": "willThereBeOvertime",
+      "name": "Overtime",
+      "description": "Will there be overtime in the game",
+      "resultType": 1
+    },
+    "10132": {
+      "id": 10132,
+      "key": "firstInningNoRuns",
+      "name": "No runs in the first inning",
+      "resultType": 1
+    },
+    "10141": {
+      "id": 10141,
+      "key": "cleanSheetHomeTeam",
+      "name": "Clean sheet",
+      "resultType": 1
+    },
+    "10142": {
+      "id": 10142,
+      "key": "cleanSheetAwayTeam",
+      "name": "Clean sheet",
+      "resultType": 1
+    },
+    "10143": {
+      "id": 10143,
+      "key": "exactTotalHomeTeam",
+      "name": "Exact total",
+      "resultType": 1
+    },
+    "10144": {
+      "id": 10144,
+      "key": "exactTotalAwayTeam",
+      "name": "Exact total",
+      "resultType": 1
+    },
+    "10145": {
+      "id": 10145,
+      "key": "firstPeriodExactTotalHomeTeam",
+      "name": "Exact total 1st",
+      "resultType": 1
+    },
+    "10146": {
+      "id": 10146,
+      "key": "firstPeriodExactTotalAwayTeam",
+      "name": "Exact total 1st",
+      "resultType": 1
+    },
+    "10147": {
+      "id": 10147,
+      "key": "secondPeriodExactTotalHomeTeam",
+      "name": "Exact total 2nd",
+      "resultType": 1
+    },
+    "10148": {
+      "id": 10148,
+      "key": "secondPeriodExactTotalAwayTeam",
+      "name": "Exact total 2nd",
+      "resultType": 1
+    },
+    "10151": {
+      "id": 10151,
+      "key": "winningRound",
+      "name": "Winning round",
+      "resultType": 1
+    },
+    "10154": {
+      "id": 10154,
+      "key": "goTheDistance",
+      "name": "Go the distance",
+      "resultType": 1
+    },
+    "10155": {
+      "id": 10155,
+      "key": "willFightEndInFirstMinute",
+      "name": "First minute finish",
+      "description": "Will the fight end in the first minute",
+      "resultType": 1
+    },
+    "10156": {
+      "id": 10156,
+      "key": "willPointBeDeducted",
+      "name": "Point to be deducted",
+      "description": "Will point be deducted",
+      "resultType": 1
+    },
+    "10157": {
+      "id": 10157,
+      "key": "endingMethod",
+      "name": "Ending method",
+      "resultType": 1
+    },
+    "10158": {
+      "id": 10158,
+      "key": "methodOfVictory",
+      "name": "Method of victory",
+      "resultType": 1
+    },
+    "10170": {
+      "id": 10170,
+      "key": "firstThreeInningsWinner",
+      "name": "Winner 1st 3 innings",
+      "resultType": 1
+    },
+    "10171": {
+      "id": 10171,
+      "key": "firstThreeInningsTotal",
+      "name": "Total 1st 3 innings",
+      "resultType": 2
+    },
+    "10172": {
+      "id": 10172,
+      "key": "firstThreeInningsSpread",
+      "name": "Handicap 1st 3 innings",
+      "resultType": 4
+    },
+    "10173": {
+      "id": 10173,
+      "key": "firstThreeInningsTotalHomeTeam",
+      "name": "Total 1st 3 innings",
+      "resultType": 2
+    },
+    "10174": {
+      "id": 10170,
+      "key": "firstThreeInningsTotalAwayTeam",
+      "name": "Total 1st 3 innings",
+      "resultType": 2
+    },
+    "10175": {
+      "id": 10175,
+      "key": "firstSevenInningsWinner",
+      "name": "Winner 1st 7 innings",
+      "resultType": 1
+    },
+    "10176": {
+      "id": 10176,
+      "key": "firstSevenInningsTotal",
+      "name": "Total 1st 7 innings",
+      "resultType": 2
+    },
+    "10177": {
+      "id": 10177,
+      "key": "firstSevenInningsSpread",
+      "name": "Handicap 1st 7 innings",
+      "resultType": 4
+    },
+    "10178": {
+      "id": 10178,
+      "key": "firstSevenInningsTotalHomeTeam",
+      "name": "Total 1st 7 innings",
+      "resultType": 2
+    },
+    "10179": {
+      "id": 10175,
+      "key": "firstSevenInningsTotalAwayTeam",
+      "name": "Total 1st 7 innings",
+      "resultType": 2
+    },
+    "10211": {
+      "id": 10211,
+      "key": "secondPeriodTotalHomeTeam",
+      "name": "Total 2nd",
+      "resultType": 2
+    },
+    "10212": {
+      "id": 10212,
+      "key": "secondPeriodTotalAwayTeam",
+      "name": "Total 2nd",
+      "resultType": 2
+    },
+    "10218": {
+      "id": 10218,
+      "key": "secondPeriodTotal2HomeTeam",
+      "name": "Total 2nd",
+      "resultType": 2
+    },
+    "10219": {
+      "id": 10219,
+      "key": "secondPeriodTotal2AwayTeam",
+      "name": "Total 2nd",
+      "resultType": 2
+    },
+    "10221": {
+      "id": 10221,
+      "key": "spreadCorners",
+      "name": "Handicap corners",
+      "resultType": 4
+    },
+    "10222": {
+      "id": 10222,
+      "key": "totalCorners",
+      "name": "Total corners",
+      "resultType": 2
+    },
+    "10223": {
+      "id": 10223,
+      "key": "totalCornersHomeTeam",
+      "name": "Total corners",
+      "resultType": 2
+    },
+    "10224": {
+      "id": 10224,
+      "key": "totalCornersAwayTeam",
+      "name": "Total corners",
+      "resultType": 2
+    },
+    "10225": {
+      "id": 10225,
+      "key": "totalCornersOddEven",
+      "name": "Total corners odd/even",
+      "resultType": 1
+    },
+    "10226": {
+      "id": 10226,
+      "key": "firstPeriodTotalCorners",
+      "name": "Total corners 1st",
+      "resultType": 2
+    },
+    "10227": {
+      "id": 10227,
+      "key": "secondPeriodTotalCorners",
+      "name": "Total corners 2nd",
+      "resultType": 2
+    },
+    "10228": {
+      "id": 10228,
+      "key": "firstPeriodTotalCornersHomeTeam",
+      "name": "Total corners 1st",
+      "resultType": 2
+    },
+    "10229": {
+      "id": 10229,
+      "key": "firstPeriodTotalCornersAwayTeam",
+      "name": "Total corners 1st",
+      "resultType": 2
+    },
+    "10230": {
+      "id": 10230,
+      "key": "secondPeriodTotalCornersHomeTeam",
+      "name": "Total corners 2nd",
+      "resultType": 2
+    },
+    "10231": {
+      "id": 10231,
+      "key": "secondPeriodTotalCornersAwayTeam",
+      "name": "Total corners 2nd",
+      "resultType": 2
+    },
+    "10232": {
+      "id": 10232,
+      "key": "firstPeriodSpreadCorners",
+      "name": "Handicap corners 1st",
+      "resultType": 2
+    },
+    "10233": {
+      "id": 10233,
+      "key": "secondPeriodSpreadCorners",
+      "name": "Handicap corners 2nd",
+      "resultType": 2
+    },
+    "10234": {
+      "id": 10234,
+      "key": "mostCorners",
+      "name": "Most corners",
+      "resultType": 1
+    },
+    "10235": {
+      "id": 10235,
+      "key": "firstPeriodMostCorners",
+      "name": "Most corners 1st",
+      "resultType": 1
+    },
+    "10236": {
+      "id": 10236,
+      "key": "secondPeriodSpreadCorners",
+      "name": "Most corners 2nd",
+      "resultType": 1
+    },
+    "10241": {
+      "id": 10241,
+      "key": "spreadCards",
+      "name": "Handicap cards",
+      "resultType": 4
+    },
+    "10242": {
+      "id": 10242,
+      "key": "totalCards",
+      "name": "Total cards",
+      "resultType": 2
+    },
+    "10243": {
+      "id": 10243,
+      "key": "totalCardsHomeTeam",
+      "name": "Total cards",
+      "resultType": 2
+    },
+    "10244": {
+      "id": 10244,
+      "key": "totalCardsAwayTeam",
+      "name": "Total cards",
+      "resultType": 2
+    },
+    "10245": {
+      "id": 10245,
+      "key": "totalRedCards",
+      "name": "Total red cards",
+      "resultType": 2
+    },
+    "10246": {
+      "id": 10246,
+      "key": "mostCards",
+      "name": "Most cards",
+      "resultType": 1
+    },
+    "10247": {
+      "id": 10247,
+      "key": "firstCards",
+      "name": "First card",
+      "resultType": 1
+    },
+    "10248": {
+      "id": 10248,
+      "key": "lastCard",
+      "name": "Last card",
+      "resultType": 1
+    },
+    "10311": {
+      "id": 10311,
+      "key": "thirdPeriodTotalHomeTeam",
+      "name": "Total 3rd",
+      "resultType": 2
+    },
+    "10312": {
+      "id": 10312,
+      "key": "thirdPeriodTotalAwayTeam",
+      "name": "Total 3rd",
+      "resultType": 2
+    },
+    "10411": {
+      "id": 10411,
+      "key": "fourthPeriodTotalHomeTeam",
+      "name": "Total 4th",
+      "resultType": 2
+    },
+    "10412": {
+      "id": 10412,
+      "key": "fourthPeriodTotalAwayTeam",
+      "name": "Total 4th",
+      "resultType": 2
+    },
+    "10511": {
+      "id": 10511,
+      "key": "fifthPeriodTotalHomeTeam",
+      "name": "Total 5th",
+      "resultType": 2
+    },
+    "10512": {
+      "id": 10512,
+      "key": "fifthPeriodTotalAwayTeam",
+      "name": "Total 5th",
+      "resultType": 2
+    },
+    "10611": {
+      "id": 10611,
+      "key": "sixthPeriodTotalHomeTeam",
+      "name": "Total 6th",
+      "resultType": 2
+    },
+    "10612": {
+      "id": 10612,
+      "key": "sixthPeriodTotalAwayTeam",
+      "name": "Total 6th",
+      "resultType": 2
+    },
+    "10711": {
+      "id": 10711,
+      "key": "seventhPeriodTotalHomeTeam",
+      "name": "Total 7th",
+      "resultType": 2
+    },
+    "10712": {
+      "id": 10712,
+      "key": "seventhPeriodTotalAwayTeam",
+      "name": "Total 7th",
+      "resultType": 2
+    },
+    "10811": {
+      "id": 10811,
+      "key": "eightPeriodTotalHomeTeam",
+      "name": "Total 8th",
+      "resultType": 2
+    },
+    "10812": {
+      "id": 10812,
+      "key": "eightPeriodTotalAwayTeam",
+      "name": "Total 8th",
+      "resultType": 2
+    },
+    "10900": {
+      "id": 10900,
+      "key": "popularVoteWinner",
+      "name": "Popular vote winner",
+      "resultType": 1
+    },
+    "10901": {
+      "id": 10901,
+      "key": "winningParty",
+      "name": "Winning party",
+      "resultType": 1
+    },
+    "10902": {
+      "id": 10902,
+      "key": "winningPartyArizona",
+      "name": "Winning party Arizona",
+      "resultType": 1
+    },
+    "10903": {
+      "id": 10903,
+      "key": "winningPartyGeorgia",
+      "name": "Winning party Georgia",
+      "resultType": 1
+    },
+    "10904": {
+      "id": 10904,
+      "key": "winningPartyMichigan",
+      "name": "Winning party Michigan",
+      "resultType": 1
+    },
+    "10905": {
+      "id": 10905,
+      "key": "winningPartyNevada",
+      "name": "Winning party Nevada",
+      "resultType": 1
+    },
+    "10906": {
+      "id": 10906,
+      "key": "winningPartyPennsylvania",
+      "name": "Winning party Pennsylvania",
+      "resultType": 1
+    },
+    "10907": {
+      "id": 10907,
+      "key": "winningPartyWinsconsin",
+      "name": "Winning party Winsconsin",
+      "resultType": 1
+    },
+    "10908": {
+      "id": 10908,
+      "key": "winningPartyNorthCarolina",
+      "name": "Winning party North Carolina",
+      "resultType": 1
+    },
+    "11010": {
+      "id": 11010,
+      "key": "homeruns",
+      "name": "Home runs",
+      "resultType": 2
+    },
+    "11011": {
+      "id": 11011,
+      "key": "bases",
+      "name": "Bases",
+      "resultType": 2
+    },
+    "11012": {
+      "id": 11012,
+      "key": "hitsRecorded",
+      "name": "Hits recorded",
+      "resultType": 2
+    },
+    "11019": {
+      "id": 11019,
+      "key": "strikeouts",
+      "name": "Strikeouts",
+      "resultType": 2
+    },
+    "11029": {
+      "id": 11029,
+      "key": "points",
+      "name": "Points",
+      "resultType": 2
+    },
+    "11035": {
+      "id": 11035,
+      "key": "rebounds",
+      "name": "Rebounds",
+      "resultType": 2
+    },
+    "11038": {
+      "id": 11038,
+      "key": "threePointsMade",
+      "name": "3-points made",
+      "resultType": 2
+    },
+    "11039": {
+      "id": 11039,
+      "key": "assists",
+      "name": "Assists",
+      "resultType": 2
+    },
+    "11047": {
+      "id": 11047,
+      "key": "pitcherHitsAllowed",
+      "name": "Pitcher hits allowed",
+      "resultType": 2
+    },
+    "11049": {
+      "id": 11049,
+      "key": "firstTouchdown",
+      "name": "First touchdown",
+      "description": "Who will score the first touchdown in the game? (incl. OT)",
+      "resultType": 2
+    },
+    "11051": {
+      "id": 11051,
+      "key": "passingYards",
+      "name": "Passing yards",
+      "resultType": 2
+    },
+    "11052": {
+      "id": 11052,
+      "key": "passingTouchdowns",
+      "name": "Passing touchdowns",
+      "resultType": 2
+    },
+    "11053": {
+      "id": 11053,
+      "key": "rushingYards",
+      "name": "Rushing yards",
+      "resultType": 2
+    },
+    "11055": {
+      "id": 11055,
+      "key": "touchdowns",
+      "name": "Scoring touchdown",
+      "description": "Who will score a touchdown in the game?",
+      "tooltipKey": "touchdowns",
+      "resultType": 2
+    },
+    "11056": {
+      "id": 11056,
+      "key": "lastTouchdown",
+      "name": "Last touchdown",
+      "description": "Who will score the last touchdown in the game?",
+      "resultType": 2
+    },
+    "11057": {
+      "id": 11057,
+      "key": "receivingYards",
+      "name": "Receiving yards",
+      "resultType": 2
+    },
+    "11058": {
+      "id": 11058,
+      "key": "receptions",
+      "name": "Receptions",
+      "resultType": 2
+    },
+    "11060": {
+      "id": 11060,
+      "key": "fieldGoalsMade",
+      "name": "Field goals made",
+      "resultType": 2
+    },
+    "11086": {
+      "id": 11086,
+      "key": "goals",
+      "name": "Goals",
+      "description": "Who will score a goal in the game?",
+      "resultType": 2
+    },
+    "11087": {
+      "id": 11087,
+      "key": "doubleDouble",
+      "name": "Double double",
+      "resultType": 2
+    },
+    "11088": {
+      "id": 11088,
+      "key": "tripleDouble",
+      "name": "Triple double",
+      "resultType": 2
+    },
+    "11097": {
+      "id": 11097,
+      "key": "shots",
+      "name": "Shots",
+      "resultType": 2
+    },
+    "11098": {
+      "id": 11098,
+      "key": "blocks",
+      "name": "Blocks",
+      "resultType": 2
+    },
+    "11100": {
+      "id": 11100,
+      "key": "overGoals",
+      "name": "Over goals",
+      "description": "How many goals will player score?",
+      "resultType": 2
+    },
+    "11200": {
+      "id": 11200,
+      "key": "takedownsLanded",
+      "name": "Takedowns landed",
+      "resultType": 2
+    },
+    "11201": {
+      "id": 11201,
+      "key": "significantStrikesLanded",
+      "name": "Significant strikes landed",
+      "resultType": 2
+    },
+    "11202": {
+      "id": 11202,
+      "key": "interceptions",
+      "name": "Interceptions",
+      "resultType": 2
+    },
+    "11203": {
+      "id": 11203,
+      "key": "KickingPoints",
+      "name": "Kicking points",
+      "resultType": 2
+    },
+    "11204": {
+      "id": 11204,
+      "key": "passingAttempts",
+      "name": "Passing attempts",
+      "resultType": 2
+    },
+    "11205": {
+      "id": 11205,
+      "key": "passingCompletions",
+      "name": "Passing completions",
+      "resultType": 2
+    },
+    "11206": {
+      "id": 11206,
+      "key": "totalTouchdowns",
+      "name": "Touchdowns",
+      "resultType": 2
+    },
+    "11207": {
+      "id": 11207,
+      "key": "sacks",
+      "name": "Sacks",
+      "tooltipKey": "sacks",
+      "resultType": 2
+    },
+    "11208": {
+      "id": 11208,
+      "key": "passingAndRushing",
+      "name": "Passing + Rushing Yards",
+      "tooltipKey": "passing-rushing",
+      "resultType": 2
+    },
+    "11209": {
+      "id": 11209,
+      "key": "rushingAndReceiving",
+      "name": "Rushing + Receiving Yards",
+      "tooltipKey": "rushing-receiving",
+      "resultType": 2
+    },
+    "11210": {
+      "id": 11210,
+      "key": "longestReception",
+      "name": "Longest reception",
+      "tooltipKey": "longest-reception",
+      "resultType": 2
+    },
+    "11211": {
+      "id": 11211,
+      "key": "extraPoints",
+      "name": "Extra points",
+      "tooltipKey": "extra-points",
+      "resultType": 2
+    },
+    "11212": {
+      "id": 11212,
+      "key": "tackles",
+      "name": "Tackles",
+      "tooltipKey": "tackles",
+      "resultType": 2
+    },
+    "11213": {
+      "id": 11213,
+      "key": "outs",
+      "name": "Outs recorded",
+      "resultType": 2
+    },
+    "11214": {
+      "id": 11214,
+      "key": "rbis",
+      "name": "RBIs O/U",
+      "resultType": 2
+    },
+    "11215": {
+      "id": 11215,
+      "key": "hitsRunsRbis",
+      "name": "Hits + Runs + RBIs",
+      "resultType": 2
+    },
+    "11216": {
+      "id": 11216,
+      "key": "earnedRuns",
+      "name": "Earned runs allowed",
+      "resultType": 2
+    },
+    "11217": {
+      "id": 11217,
+      "key": "doubles",
+      "name": "Doubles",
+      "resultType": 2
+    },
+    "11218": {
+      "id": 11218,
+      "key": "battingWalks",
+      "name": "Walks",
+      "resultType": 2
+    },
+    "11219": {
+      "id": 11219,
+      "key": "battingStrikeouts",
+      "name": "Strikeouts",
+      "resultType": 2
+    },
+    "11220": {
+      "id": 11220,
+      "key": "singles",
+      "name": "Singles",
+      "resultType": 2
+    },
+    "11221": {
+      "id": 11221,
+      "key": "stolenBases",
+      "name": "Stolen bases",
+      "resultType": 2
+    },
+    "11222": {
+      "id": 11222,
+      "key": "runsScored",
+      "name": "Runs scored",
+      "resultType": 2
+    },
+    "11223": {
+      "id": 11223,
+      "key": "walksAllowed",
+      "name": "Walks allowed",
+      "resultType": 2
+    },
+    "11225": {
+      "id": 11225,
+      "key": "pointsAssists",
+      "name": "Points + Assists",
+      "shortName": "PTS + AST",
+      "resultType": 2
+    },
+    "11226": {
+      "id": 11226,
+      "key": "pointsRebound",
+      "name": "Points + Rebounds",
+      "shortName": "PTS + REB",
+      "resultType": 2
+    },
+    "11227": {
+      "id": 11227,
+      "key": "pointsReboundsAssists",
+      "name": "Points + Rebounds + Assists",
+      "shortName": "PTS + REB + AST",
+      "resultType": 2
+    },
+    "11228": {
+      "id": 11228,
+      "key": "reboundsAssists",
+      "name": "Rebounds + Assists",
+      "shortName": "REB + AST",
+      "resultType": 2
+    },
+    "11229": {
+      "id": 11229,
+      "key": "steals",
+      "name": "Steals",
+      "resultType": 2
+    },
+    "11230": {
+      "id": 11230,
+      "key": "stealsBlocks",
+      "name": "Steals + Blocks",
+      "resultType": 2
+    },
+    "11231": {
+      "id": 11231,
+      "key": "aces",
+      "name": "Aces",
+      "resultType": 2
+    },
+    "11232": {
+      "id": 11232,
+      "key": "breakPointsWon",
+      "name": "Break points won",
+      "resultType": 2
+    },
+    "11234": {
+      "id": 11234,
+      "key": "cardReceiver",
+      "name": "Card receiver",
+      "resultType": 2
+    },
+    "11235": {
+      "id": 11235,
+      "key": "redCardReceiver",
+      "name": "Red card receiver",
+      "resultType": 2
+    },
+    "11236": {
+      "id": 11236,
+      "key": "firstScorer",
+      "name": "First scorer",
+      "resultType": 2
+    },
+    "11237": {
+      "id": 11237,
+      "key": "lastScorer",
+      "name": "Last scorer",
+      "resultType": 2
+    },
+    "11238": {
+      "id": 11238,
+      "key": "shotsOnTarget",
+      "name": "Shots on target",
+      "resultType": 2
+    },
+    "11239": {
+      "id": 11239,
+      "key": "shots",
+      "name": "Shots",
+      "resultType": 2
+    },
+    "11240": {
+      "id": 11240,
+      "key": "doubleFaults",
+      "name": "Double faults",
+      "resultType": 2
+    },
+    "11241": {
+      "id": 11241,
+      "key": "longestRush",
+      "name": "Longest rush",
+      "tooltipKey": "longest-rush",
+      "resultType": 2
+    },
+    "11245": {
+      "id": 11245,
+      "key": "blockedShots",
+      "name": "Blocked shots",
+      "resultType": 2
+    },
+    "11246": {
+      "id": 11246,
+      "key": "turnovers",
+      "name": "Turnovers",
+      "resultType": 2
+    },
+    "13001": {
+      "id": 13001,
+      "key": "leagueWinner",
+      "name": "Champion",
+      "resultType": 1
+    },
+    "13002": {
+      "id": 13002,
+      "key": "mvp",
+      "name": "MVP",
+      "resultType": 1
+    },
+    "13003": {
+      "id": 13003,
+      "key": "cupWinner",
+      "name": "Cup winner",
+      "resultType": 1
+    },
+    "13005": {
+      "id": 13005,
+      "key": "toMakeFinalFour",
+      "name": "To make final four",
+      "resultType": 1
+    },
+    "13006": {
+      "id": 13006,
+      "key": "raceWinner",
+      "name": "Race winner",
+      "resultType": 1
+    },
+    "13007": {
+      "id": 13007,
+      "key": "racePodium",
+      "name": "Race podium",
+      "resultType": 1
+    },
+    "90000": {
+      "id": 90000,
+      "key": "sgpBuilder",
+      "name": "Moneyline + Over",
+      "resultType": 3
+    },
+    "90001": {
+      "id": 90001,
+      "key": "sgpBuilder1",
+      "name": "Moneyline + Player Points",
+      "resultType": 3
+    },
+    "90002": {
+      "id": 90002,
+      "key": "sgpBuilder2",
+      "name": "Generic Name",
+      "resultType": 3
+    },
+    "90003": {
+      "id": 90003,
+      "key": "sgpBuilder3",
+      "name": "Generic Name",
+      "resultType": 3
+    },
+    "90004": {
+      "id": 90004,
+      "key": "sgpBuilder4",
+      "name": "Generic Name",
+      "resultType": 3
+    },
+    "90005": {
+      "id": 90005,
+      "key": "sgpBuilder5",
+      "name": "Generic Name",
+      "resultType": 3
+    },
+    "-1": {
+      "id": -1,
+      "key": "",
+      "name": ""
+    }
+  }

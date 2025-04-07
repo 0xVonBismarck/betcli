@@ -1,0 +1,99 @@
+{
+  "1": {
+    "sport": "Football",
+    "id": 1,
+    "label": "NCAA Football",
+    "opticOddsName": "NCAAF",
+    "priority": 202
+  },
+  "2": {
+    "sport": "Football",
+    "id": 2,
+    "label": "NFL",
+    "opticOddsName": "NFL",
+    "priority": 201
+  },
+  "3": {
+    "sport": "Baseball",
+    "id": 3,
+    "label": "MLB",
+    "opticOddsName": "MLB",
+    "priority": 401
+  },
+  "4": {
+    "sport": "Basketball",
+    "id": 4,
+    "label": "NBA",
+    "opticOddsName": "NBA",
+    "priority": 301
+  },
+  "5": {
+    "sport": "Basketball",
+    "id": 5,
+    "label": "NCAA Basketball",
+    "opticOddsName": "NCAAB",
+    "priority": 302
+  },
+  "6": {
+    "sport": "Hockey",
+    "id": 6,
+    "label": "NHL",
+    "opticOddsName": "NHL",
+    "priority": 501
+  },
+  "7": {
+    "sport": "Fighting",
+    "id": 7,
+    "label": "UFC",
+    "priority": 601
+  },
+  "10": {
+    "sport": "Soccer",
+    "id": 10,
+    "label": "MLS",
+    "opticOddsName": "USA - Major League Soccer",
+    "priority": 140
+  },
+  "11": {
+    "sport": "Soccer",
+    "id": 11,
+    "label": "EPL",
+    "opticOddsName": "England - Premier League",
+    "priority": 120
+  },
+  "12": {
+    "sport": "Soccer",
+    "id": 12,
+    "label": "Ligue 1",
+    "opticOddsName": "France - Ligue 1",
+    "priority": 124
+  },
+  "13": {
+    "sport": "Soccer",
+    "id": 13,
+    "label": "Bundesliga",
+    "opticOddsName": "Germany - Bundesliga",
+    "priority": 123
+  },
+  "14": {
+    "sport": "Soccer",
+    "id": 14,
+    "label": "La Liga",
+    "opticOddsName": "Spain - La Liga",
+    "priority": 121
+  },
+  "15": {
+    "sport": "Soccer",
+    "id": 15,
+    "label": "Serie A",
+    "opticOddsName": "Italy - Serie A",
+    "priority": 122
+  },
+  "16": {
+    "sport": "Soccer",
+    "id": 16,
+    "label": "UEFA Champions League",
+    "opticOddsName": "UEFA - Champions League",
+    "priority": 103
+  }
+} 
