@@ -200,4 +200,257 @@ body {
     .message {
         max-width: 90%;
     }
+}
+
+/* Terminal container */
+#terminal {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-family: 'Courier New', monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Terminal content area */
+#terminalContent {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Input container */
+#inputContainer {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+}
+
+/* Prompt symbol */
+.prompt {
+    color: #3498db;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Terminal input */
+#terminalInput {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: #f0f0f0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Message styles */
+.message {
+    margin: 5px 0;
+    padding: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.message.user {
+    color: #3498db;
+}
+
+.message.system {
+    color: #f0f0f0;
+}
+
+.message.error {
+    color: #e74c3c;
+}
+
+/* Navigation styles */
+.nav-item {
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+    background-color: #2d2d2d;
+}
+
+.nav-item.selected {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.nav-header {
+    color: #3498db;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 5px;
+    border-bottom: 1px solid #3498db;
+}
+
+.nav-instructions {
+    color: #95a5a6;
+    font-size: 0.9em;
+    margin: 10px 0;
+    padding: 5px;
+    border-top: 1px solid #2d2d2d;
+}
+
+/* Market display styles */
+.market-info {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.market-header {
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.market-details {
+    color: #95a5a6;
+    font-size: 0.9em;
+}
+
+.market-odds {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+}
+
+.odds-item {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+.odds-label {
+    color: #95a5a6;
+    font-size: 0.8em;
+}
+
+.odds-value {
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+/* ANSI color support */
+.ansi-black { color: #000000; }
+.ansi-red { color: #e74c3c; }
+.ansi-green { color: #2ecc71; }
+.ansi-yellow { color: #f1c40f; }
+.ansi-blue { color: #3498db; }
+.ansi-magenta { color: #9b59b6; }
+.ansi-cyan { color: #1abc9c; }
+.ansi-white { color: #ffffff; }
+.ansi-bright-black { color: #666666; }
+.ansi-bright-red { color: #ff6b6b; }
+.ansi-bright-green { color: #55efc4; }
+.ansi-bright-yellow { color: #ffeaa7; }
+.ansi-bright-blue { color: #74b9ff; }
+.ansi-bright-magenta { color: #a29bfe; }
+.ansi-bright-cyan { color: #81ecec; }
+.ansi-bright-white { color: #ffffff; }
+
+/* Background colors */
+.ansi-bg-black { background-color: #000000; }
+.ansi-bg-red { background-color: #e74c3c; }
+.ansi-bg-green { background-color: #2ecc71; }
+.ansi-bg-yellow { background-color: #f1c40f; }
+.ansi-bg-blue { background-color: #3498db; }
+.ansi-bg-magenta { background-color: #9b59b6; }
+.ansi-bg-cyan { background-color: #1abc9c; }
+.ansi-bg-white { background-color: #ffffff; }
+
+/* Text styles */
+.ansi-bold { font-weight: bold; }
+.ansi-dim { opacity: 0.7; }
+.ansi-italic { font-style: italic; }
+.ansi-underline { text-decoration: underline; }
+.ansi-blink { animation: blink 1s step-end infinite; }
+.ansi-inverse { filter: invert(100%); }
+.ansi-hidden { visibility: hidden; }
+.ansi-strike { text-decoration: line-through; }
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Help content styles */
+.help-content {
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.help-section {
+    margin-bottom: 20px;
+}
+
+.help-header {
+    color: #3498db;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #3498db;
+}
+
+.help-item {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.help-item .command {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.help-item .description {
+    color: #95a5a6;
+    margin-bottom: 3px;
+}
+
+.help-item .example {
+    color: #2ecc71;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.leagues-list {
+    columns: 2;
+    column-gap: 20px;
+    color: #95a5a6;
+    line-height: 1.5;
 } 

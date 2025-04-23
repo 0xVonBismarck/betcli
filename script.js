@@ -563,17 +563,12 @@ async function queryLeague(leagueName) {
     const cleanLeagueName = leagueName.trim().toLowerCase();
     
     // Find league ID based on name
-    let leagueId = null;
+    let leagueId = getLeagueIdByName(cleanLeagueName);
     
-    // Try to get league ID using the helper function
-    leagueId = getLeagueIdByName(cleanLeagueName);
-    
-    // If no league found by name using helper function, try direct search in LEAGUE_ID_DATA
+    // If no league found by name, try direct search in LEAGUE_ID_DATA
     if (!leagueId && LEAGUE_ID_DATA) {
-        // Search through LEAGUE_ID_DATA directly
         for (const id in LEAGUE_ID_DATA) {
             const entry = LEAGUE_ID_DATA[id];
-            // Check for partial matches in opticOddsName
             if (entry.opticOddsName && entry.opticOddsName.toLowerCase().includes(cleanLeagueName)) {
                 leagueId = parseInt(id);
                 break;
@@ -581,87 +576,47 @@ async function queryLeague(leagueName) {
         }
     }
     
-    // If still no league found by name, try to interpret the input as a direct league ID
+    // If still no league found, try to interpret as a direct league ID
     if (!leagueId && !isNaN(parseInt(cleanLeagueName))) {
         leagueId = parseInt(cleanLeagueName);
     }
     
     if (!leagueId) {
         addMessage(`League "${leagueName}" not found. Use /leagueid to see available leagues.`, 'system');
-        return;
+        return null;
     }
     
     // Show loading message
-    const loadingMessage = addMessage(`Fetching games for league ID ${leagueId}...`, 'system');
+    addMessage(`Fetching games for league ID ${leagueId}...`, 'system');
     
     try {
-        // Fetch markets for the league
         const apiParams = {
-            networkId: window.DEFAULT_NETWORK_ID,
             leagueId: leagueId,
-            limit: 50  // Increase limit to get more games
+            networkId: window.DEFAULT_NETWORK_ID || 10
         };
         
         const marketData = await fetchMarketData(apiParams);
-        
-        // Process the response to extract unique games
-        const games = extractUniqueGames(marketData);
-        currentQueryResults = games;
-        
-        // Remove loading message
-        if (loadingMessage && loadingMessage.parentNode) {
-            loadingMessage.parentNode.removeChild(loadingMessage);
+        if (!marketData) {
+            addMessage('No data received from API', 'system');
+            return null;
         }
         
-        if (games.length === 0) {
-            addMessage(`No games found for league ID ${leagueId}`, 'system');
-            return;
+        const markets = extractMarketsFromResponse(marketData);
+        if (!markets || markets.length === 0) {
+            addMessage('No markets found for this league', 'system');
+            return null;
         }
         
-        // Get the league name
-        const leagueName = getLeagueNameById(leagueId) || `League ID ${leagueId}`;
+        // Store current results for filtering
+        currentQueryResults = markets;
         
-        // Format the output
-        let output = `<div class="query-results">
-            <div class="query-header">📊 ${games.length} Games for ${leagueName}</div>
-            <div class="game-list">`;
-        
-        games.forEach(game => {
-            // Format the date in a more readable way
-            const gameDate = new Date(game.maturityDate);
-            const formattedDate = gameDate.toLocaleDateString(undefined, { 
-                weekday: 'short', 
-                month: 'short', 
-                day: 'numeric' 
-            });
-            const formattedTime = gameDate.toLocaleTimeString(undefined, { 
-                hour: '2-digit', 
-                minute: '2-digit' 
-            });
-            
-            output += `<div class="game-item">
-                <span class="game-id" onclick="document.getElementById('terminalInput').value = '/gameid ${game.gameId}'; document.getElementById('terminalInput').focus();">
-                    [${shortenGameId(game.gameId)}]
-                </span>
-                <span class="teams">${game.awayTeam} @ ${game.homeTeam}</span>
-                <span class="time">${formattedDate} ${formattedTime}</span>
-            </div>`;
-        });
-        
-        output += `</div>
-            <div class="query-footer">Click on a game ID to view markets or type /gameid [ID]</div>
-        </div>`;
-        
-        addMessage(output, 'system');
+        // Return the markets for navigation
+        return markets;
         
     } catch (error) {
-        // Remove loading message
-        if (loadingMessage && loadingMessage.parentNode) {
-            loadingMessage.parentNode.removeChild(loadingMessage);
-        }
-        
-        console.error('Error fetching league data:', error);
-        addMessage(`Error: ${error.message}`, 'system');
+        console.error('Error fetching market data:', error);
+        addMessage('Error fetching market data: ' + error.message, 'system');
+        return null;
     }
 }
 
@@ -1432,45 +1387,94 @@ function showLeagueIds(filter) {
 // Show help
 function showHelp() {
     const helpText = `
-Available commands:
-/apikey YOUR_API_KEY - Set your OpenAI API key
-/clear - Clear the terminal
-/help - Show this help message
-/networkid NUMBER - Set the network ID (default: 10 for Optimism)
-/debug - Toggle debug mode to see raw API responses
-/leagueid [sport|league|id] - Show league IDs and details
-/query LEAGUE - Query games for a specific league (e.g., /query nba)
-/gameid ID - View markets for a specific game
-/type TYPE - Filter markets by type
-/live [league] - Show currently live games (optional league filter)
+<div class="help-content">
+    <div class="help-section">
+        <div class="help-header">📚 Available Commands</div>
+        
+        <div class="help-item">
+            <div class="command">/query LEAGUE</div>
+            <div class="description">Query games for a specific league (e.g., /query nba)</div>
+            <div class="example">Example: /query epl</div>
+        </div>
 
-Reference Data:
-We use the leagueID.json file to map leagues to their numeric IDs for API queries
-All lookups use league IDs directly with the leagueId parameter
+        <div class="help-item">
+            <div class="command">/live [LEAGUE]</div>
+            <div class="description">Show live games, optionally filtered by league</div>
+            <div class="example">Example: /live or /live nba</div>
+        </div>
 
-Key league IDs:
-- NBA: 4
-- NFL: 2
-- MLB: 3
-- NHL: 6
-- EPL: 11
-- MLS: 10
-- NCAA Basketball: 5
-- NCAA Football: 1
-- UEFA Champions League: 16
-- La Liga: 14
-- Serie A: 15
-- Bundesliga: 13
-- Ligue 1: 12
+        <div class="help-item">
+            <div class="command">/leagueid [FILTER]</div>
+            <div class="description">Show available leagues and their IDs</div>
+            <div class="example">Example: /leagueid soccer</div>
+        </div>
 
-Examples:
-"/query nba" - Show all NBA games
-"/live" - Show all live games across all leagues
-"/live nba" - Show only live NBA games
-"/gameid 0x123..." - Show markets for a specific game
-"/type moneyline" - Filter markets by type
-    `;
-    
+        <div class="help-item">
+            <div class="command">/networkid NUMBER</div>
+            <div class="description">Set the network ID (default: 10 for Optimism)</div>
+            <div class="example">Example: /networkid 10</div>
+        </div>
+
+        <div class="help-item">
+            <div class="command">/apikey KEY</div>
+            <div class="description">Set your OpenAI API key</div>
+        </div>
+
+        <div class="help-item">
+            <div class="command">/clear</div>
+            <div class="description">Clear the terminal</div>
+        </div>
+
+        <div class="help-item">
+            <div class="command">/help</div>
+            <div class="description">Show this help message</div>
+        </div>
+    </div>
+
+    <div class="help-section">
+        <div class="help-header">🎮 Navigation Controls</div>
+        
+        <div class="help-item">
+            <div class="command">↑/↓ Arrow Keys</div>
+            <div class="description">Navigate through games or markets</div>
+        </div>
+
+        <div class="help-item">
+            <div class="command">→ or Enter</div>
+            <div class="description">View details of selected game</div>
+        </div>
+
+        <div class="help-item">
+            <div class="command">← Arrow Key</div>
+            <div class="description">Go back to game list</div>
+        </div>
+
+        <div class="help-item">
+            <div class="command">Q Key</div>
+            <div class="description">Exit navigation mode</div>
+        </div>
+    </div>
+
+    <div class="help-section">
+        <div class="help-header">🏆 Supported Leagues</div>
+        <div class="leagues-list">
+            • NBA (Basketball)
+            • NFL (American Football)
+            • MLB (Baseball)
+            • NHL (Hockey)
+            • EPL (Soccer)
+            • La Liga (Soccer)
+            • Serie A (Soccer)
+            • Bundesliga (Soccer)
+            • Ligue 1 (Soccer)
+            • MLS (Soccer)
+            • Champions League (Soccer)
+            • NCAA Basketball
+            • NCAA Football
+        </div>
+    </div>
+</div>`;
+
     addMessage(helpText, 'system');
 }
 
@@ -1949,46 +1953,47 @@ function clearTerminal() {
 
 // Fetch live markets from the API
 async function fetchLiveMarkets(leagueFilter) {
-    // Show loading message
-    const loadingMessage = addMessage("Fetching live markets...", 'system');
-    
     try {
-        // Use the live-markets endpoint
-        const networkId = window.DEFAULT_NETWORK_ID;
+        const networkId = window.DEFAULT_NETWORK_ID || 10;
         const url = `${window.API_BASE_URL}/overtime-v2/networks/${networkId}/live-markets`;
         
-        // Add leagueId filter if provided
-        if (leagueFilter && !isNaN(parseInt(leagueFilter))) {
-            url.searchParams.append('leagueId', parseInt(leagueFilter));
-        }
-        
-        if (DEBUG_MODE) {
-            console.log('Fetching live markets from:', url);
-        }
+        addMessage('Fetching live markets...', 'system');
         
         const response = await fetch(url);
-        
         if (!response.ok) {
-            throw new Error(`API error: ${response.status} ${response.statusText}`);
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
         
         const marketData = await response.json();
-        
-        // Process the live markets
-        displayLiveMarkets(marketData, leagueFilter);
-        
-        // Remove loading message
-        if (loadingMessage && loadingMessage.parentNode) {
-            loadingMessage.parentNode.removeChild(loadingMessage);
+        if (!marketData) {
+            addMessage('No live markets data received', 'system');
+            return null;
         }
+        
+        let markets = extractMarketsFromResponse(marketData);
+        
+        // Filter by league if specified
+        if (leagueFilter) {
+            const leagueId = getLeagueIdByName(leagueFilter);
+            if (leagueId) {
+                markets = markets.filter(market => market.leagueId === leagueId);
+            }
+        }
+        
+        if (!markets || markets.length === 0) {
+            addMessage('No live markets found' + (leagueFilter ? ` for ${leagueFilter}` : ''), 'system');
+            return null;
+        }
+        
+        // Store current results for filtering
+        currentQueryResults = markets;
+        
+        return markets;
+        
     } catch (error) {
-        // Remove loading message
-        if (loadingMessage && loadingMessage.parentNode) {
-            loadingMessage.parentNode.removeChild(loadingMessage);
-        }
-        
         console.error('Error fetching live markets:', error);
-        addMessage(`Error: ${error.message}`, 'system');
+        addMessage('Error fetching live markets: ' + error.message, 'system');
+        return null;
     }
 }
 
